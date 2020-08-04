@@ -1,0 +1,19 @@
+version: "3"
+services:
+    web:
+        container_name: "buglog_web"
+        build: ./web
+        ports:
+            - "8500:8500"
+        env_file:
+            - ./coldfusion.env
+        depends_on:
+            - data
+
+    data:
+        container_name: "buglog_data"
+        build: ./data
+        env_file:
+            - mssql.env
+        ports:
+            - "1433:1433"
