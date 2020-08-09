@@ -5,3 +5,6 @@ Web
 
 Data
 	mssql-server-linux:latest
+
+BugLogHQ
+	https://github.com/oarevalo/BugLogHQ
