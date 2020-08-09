@@ -5,9 +5,6 @@
 <cfset administratorAPI.login("password") />
 Logged in.
 
-<cfset debuggingAPI.setDebugProperty("enableRobustExceptions", true) />
-Set robust exceptions.
-
 <cfset datasourceAPI.SETMSSQL(
 	name     = "BUGLOG",
     host     = "data",
