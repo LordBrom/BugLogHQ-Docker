@@ -7,7 +7,7 @@ Logged in.
 
 <cfset datasourceAPI.SETMSSQL(
 	name     = "BUGLOG",
-    host     = "data",
+    host     = "buglog_data",
     port     = "1433",
     database = "BUGLOG",
     username = "sa",
