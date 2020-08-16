@@ -1,5 +1,5 @@
 crossdomain.xml
 
-
 WEB-INF/
 
+*.code-workspace

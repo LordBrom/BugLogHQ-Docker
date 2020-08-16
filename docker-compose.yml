@@ -1,6 +1,6 @@
 version: "3"
 services:
-    web:
+    buglog_web:
         container_name: "buglog_web"
         build: ./web
         ports:
@@ -8,9 +8,9 @@ services:
         env_file:
             - ./coldfusion.env
         depends_on:
-            - data
+            - buglog_data
 
-    data:
+    buglog_data:
         container_name: "buglog_data"
         build: ./data
         env_file:
