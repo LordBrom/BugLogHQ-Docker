@@ -1,17 +1,18 @@
 <cfset administratorAPI = createObject("component", "CFIDE.adminapi.administrator") />
 <cfset datasourceAPI    = createObject("component", "CFIDE.adminapi.datasource") />
 <cfset debuggingAPI     = createObject("component", "CFIDE.adminapi.debugging") />
+<cfset environment      = createObject( "java", "java.lang.System" ).getenv() />
 
-<cfset administratorAPI.login("password") />
+<cfset administratorAPI.login(environment['password'] ?: "ColdFusion123") />
 Logged in.
 
 <cfset datasourceAPI.SETMSSQL(
 	name     = "BUGLOG",
-    host     = "buglog_data",
+    host     = environment['dbHost'] ?: "buglog_data",
     port     = "1433",
     database = "BUGLOG",
-    username = "sa",
-    password = "StrongPassword!"
+    username = environment['dataUsername'] ?: "sa",
+    password = environment['dataPassword'] ?: "YourStrong!Passw0rd"
 ) />
 Added [BUGLOG] datasource
 

@@ -13,7 +13,7 @@
 <cfparam name="severity" default="FATAL">
 <cfparam name="apikey" default="">
 <cfparam name="instance" default="">
-<cfparam name="bugLogHREF" default="http://web:8500/bugLog/">
+<cfparam name="bugLogHREF" default="http://localhost:8500/bugLog/">
 <cfparam name="returnTo" default="">
 
 <cfif bugLogHREF neq "">
