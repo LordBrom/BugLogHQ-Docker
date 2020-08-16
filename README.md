@@ -10,7 +10,7 @@ BugLogHQ
 	https://github.com/oarevalo/BugLogHQ
 
 
-ColdFusion Environment Variables
+Additional ColdFusion Environment Variables
 
 	dataHost: Name of BugLogHQ database container in Network.
 	
